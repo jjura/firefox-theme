@@ -1,0 +1,20 @@
+@-moz-document
+    url("about:blank"),
+    url("about:home"),
+    url("about:newtab"),
+    url("chrome://browser/content/blanktab.html")
+{
+    body
+    {
+        background-color: #000000 !important;
+    }
+}
+
+@-moz-document domain("google.com")
+{
+    body,
+    div#searchform
+    {
+        background-color: #000000 !important;
+    }
+}

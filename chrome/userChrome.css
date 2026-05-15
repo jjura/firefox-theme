@@ -1,0 +1,762 @@
+@keyframes wave {
+    0%   { margin-left: 0px; margin-bottom: 0px; }
+    25%  { margin-left: 10px; }
+    50%  { margin-left: 0px; }
+    75%  { margin-left: 10px; }
+    100% { margin-left: 0px; margin-bottom: var(--tab-min-height); opacity: 0%; }
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+{
+    background-color: #000000 !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#toolbar-menubar:not([inactive="true"])
+{
+    border-bottom: 1px solid #444444 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> toolbarbutton#firefox-view-button
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+{
+    border: unset !important;
+    margin: unset !important;
+    padding: 2px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab
+{
+    margin-right: 2px !important;
+    padding: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab
+> stack.tab-stack
+> vbox.tab-background
+{
+    border-radius: unset !important;
+    border: 1px solid #444444 !important;
+    margin: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab:hover
+> stack.tab-stack
+> vbox.tab-background
+{
+    background-color: #222222 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> vbox.tab-background
+{
+    background-image: linear-gradient(to bottom, #000000 25%, #225577 100%) !important;
+    border-image: linear-gradient(to bottom, #225577 25%, #5588aa 100%) 1 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> vbox.tab-background::before {
+    position: absolute !important;
+    left: 50% !important;
+    bottom: 0px !important;
+    height: 4px !important;
+    width: 4px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> vbox.tab-background::before {
+    animation: wave 2s infinite !important;
+    background-color: #5588aa !important;
+    border-radius: 2px !important;
+    box-shadow: 20px 20px 0px #5588aa !important;
+    content: "" !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> vbox.tab-background::after {
+    position: absolute !important;
+    left: 70% !important;
+    bottom: 0px !important;
+    height: 4px !important;
+    width: 4px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> vbox.tab-background::after {
+    animation: wave 3s infinite !important;
+    background-color: #5588aa !important;
+    border-radius: 2px !important;
+    box-shadow: 20px 20px 0px #5588aa !important;
+    content: "" !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab
+> stack.tab-stack
+> vbox.tab-background
+> hbox.tab-loading-burst
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab
+> stack.tab-stack
+> hbox.tab-content
+{
+    padding: 0px 12px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> hbox.tab-content::before {
+    position: absolute !important;
+    bottom: 0px !important;
+    height: 4px !important;
+    width: 4px !important;
+    left: 10% !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> hbox.tab-content::before {
+    animation: wave 2.3s infinite !important;
+    background-color: #5588aa !important;
+    border-radius: 2px !important;
+    box-shadow: 20px 20px 0px #5588aa !important;
+    content: "" !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> hbox.tab-content::after {
+    position: absolute !important;
+    bottom: 0px !important;
+    height: 4px !important;
+    width: 4px !important;
+    left: 30% !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> hbox.tab-content::after {
+    animation: wave 2.7s infinite !important;
+    background-color: #5588aa !important;
+    border-radius: 2px !important;
+    box-shadow: 20px 20px 0px #5588aa !important;
+    content: "" !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab
+> stack.tab-stack
+> hbox.tab-content
+> moz-button.tab-audio-button
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab
+> stack.tab-stack
+> hbox.tab-content
+> vbox.tab-label-container
+> label.tab-text
+{
+    color: #888888 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab:hover
+> stack.tab-stack
+> hbox.tab-content
+> vbox.tab-label-container
+> label.tab-text
+{
+    color: #eeeeee !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab[selected="true"]
+> stack.tab-stack
+> hbox.tab-content
+> vbox.tab-label-container
+> label.tab-text
+{
+    color: #eeeeee !important;
+    text-shadow: 0px 1px 0px black !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab
+> stack.tab-stack
+> hbox.tab-content
+> stack.tab-icon-stack
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab
+> stack.tab-stack
+> hbox.tab-content
+> image.tab-close-button
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab:hover
+> stack.tab-stack
+> hbox.tab-content
+> image.tab-close-button
+{
+    display: flex !important;
+    fill: #888888 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> tab.tabbrowser-tab:hover
+> stack.tab-stack
+> hbox.tab-content
+> image.tab-close-button:hover
+{
+    background-color: #111111 !important;
+    border-radius: 4px !important;
+    fill: #eeeeee !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> hbox#tabbrowser-arrowscrollbox-periphery
+> toolbarbutton#tabs-newtab-button
+{
+    fill: #888888 !important;
+    padding: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> hbox#tabbrowser-arrowscrollbox-periphery
+> toolbarbutton#tabs-newtab-button:hover
+{
+    fill: #eeeeee !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> hbox#tabbrowser-arrowscrollbox-periphery
+> toolbarbutton#tabs-newtab-button
+> image.toolbarbutton-icon
+{
+    border-radius: unset !important;
+    border: 1px solid #444444 !important;
+    height: 100% !important;
+    width: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> tabs#tabbrowser-tabs
+> arrowscrollbox#tabbrowser-arrowscrollbox
+> hbox#tabbrowser-arrowscrollbox-periphery
+> toolbarbutton#tabs-newtab-button:hover
+> image.toolbarbutton-icon
+{
+    background-color: #222222 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#TabsToolbar
+> hbox.toolbar-items
+> hbox#TabsToolbar-customization-target
+> toolbarbutton#alltabs-button
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+{
+    background-color: #222222 !important;
+    border-bottom: 1px solid #444444 !important;
+    border-top: 1px solid #444444 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbarbutton.toolbarbutton-1
+{
+    fill: #888888 !important;
+    margin-left: 4px !important;
+    opacity: unset !important;
+    padding: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbarbutton.toolbarbutton-1[disabled="true"]
+{
+    fill: #444444 !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbarbutton.toolbarbutton-1:not([disabled="true"]):hover
+> image.toolbarbutton-icon
+{
+    background-color: #111111 !important;
+    border-radius: 4px !important;
+    fill: #eeeeee !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbarbutton.toolbarbutton-1[open="true"]
+> image.toolbarbutton-icon
+{
+    background-color: #111111 !important;
+    fill: #eeeeee !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#stop-reload-button
+> toolbarbutton.toolbarbutton-1
+{
+    fill: #888888 !important;
+    margin: 0px 4px !important;
+    padding: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#stop-reload-button
+> toolbarbutton.toolbarbutton-1:hover
+> image.toolbarbutton-icon
+{
+    background-color: #111111 !important;
+    border-radius: 4px !important;
+    fill: #eeeeee !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> toolbaritem#PanelUI-button
+> toolbarbutton.toolbarbutton-1
+{
+    fill: #888888 !important;
+    margin: 4px 4px !important;
+    padding: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> toolbaritem#PanelUI-button
+> toolbarbutton.toolbarbutton-1:hover
+> stack.toolbarbutton-badge-stack
+{
+    background-color: #111111 !important;
+    border-radius: 4px !important;
+    fill: #eeeeee !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> toolbaritem#PanelUI-button
+> toolbarbutton.toolbarbutton-1[open="true"]
+> stack.toolbarbutton-badge-stack
+{
+    background-color: #111111 !important;
+    fill: #eeeeee !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#urlbar-container
+{
+    margin: unset !important;
+    padding: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#urlbar-container
+> div#urlbar
+> hbox#urlbar-background
+{
+    background: #000000 !important;
+    border-radius: unset !important;
+    border: 1px solid #444444 !important;
+    outline: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#urlbar-container
+> div#urlbar
+> hbox.urlbar-input-container
+> moz-input-box.urlbar-input-box
+{
+    padding-left: 8px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#urlbar-container
+> div#urlbar
+> hbox.urlbar-input-container
+> box#tracking-protection-icon-container
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#urlbar-container
+> div#urlbar
+> hbox.urlbar-input-container
+> box#identity-box
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#urlbar-container
+> div#urlbar
+> hbox.urlbar-input-container
+> hbox#page-action-buttons
+{
+    display: none !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#nav-bar
+> hbox#nav-bar-customization-target
+> toolbaritem#urlbar-container
+> div#urlbar
+> hbox.urlbar-input-container
+> toolbarbutton#urlbar-searchmode-switcher
+{
+    background-color: #222222 !important;
+    border-radius: unset !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#PersonalToolbar
+{
+    background-color: unset !important;
+    border-bottom: 1px solid #444444 !important;
+    padding: 4px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#PersonalToolbar
+> toolbarbutton#import-button
+{
+    margin: unset !important;
+    padding: 4px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#PersonalToolbar
+> toolbarbutton#import-button:hover
+{
+    background: #222222 !important;
+    border-radius: 4px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#PersonalToolbar
+> toolbaritem#personal-bookmarks
+> hbox#PlacesToolbar
+> scrollbox#PlacesToolbarItems
+> toolbarbutton.bookmark-item
+{
+    margin: unset !important;
+    padding: 4px !important;
+}
+
+html#main-window
+> body
+> toolbox#navigator-toolbox
+> toolbar#PersonalToolbar
+> toolbaritem#personal-bookmarks
+> hbox#PlacesToolbar
+> scrollbox#PlacesToolbarItems
+> toolbarbutton.bookmark-item:hover
+{
+    background: #222222 !important;
+    border-radius: 4px !important;
+}
